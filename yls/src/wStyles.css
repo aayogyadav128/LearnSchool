@@ -1,0 +1,138 @@
+body{
+    margin:0px;
+    background-image: white;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .logo{
+    height:60px;
+    width:60px;
+  }
+  .w-primary-navbar{
+    background-color:white;
+    border-bottom:2px solid black;
+    padding:10px;
+  }
+  .w-logo-name{
+    color:black;
+    font-size:30px;
+    
+  }
+  .cut-after-line-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .w-search-feild{
+    background-color:white;
+    border:2px solid black;
+    border-radius:20px;
+    height:40px;
+    max-width:90vh;
+    padding:10px;
+    
+  }
+  .search-feild::placeholder{
+    color:grey;
+  }
+  .search-feild:focus{
+  }
+  
+  
+  /* switch code */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(135deg, #25003C, #680064);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-image: linear-gradient(135deg, black, black);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .btn-profile-pic{
+    color:none;
+  }
+  .profile-pic{
+    border-radius:50%;
+    height:60px;
+  }
+  .mgn{
+    margin-top:10px;
+  }
+  .secondary-navbar{
+    height:30px;
+    border-bottom:2px solid grey;
+  }
+  #w-card-style{
+    background-color:white;
+    color:black;
+    border-color:black;
+  }
+  /* media queries*/
+  @media only screen and (max-width: 650px) {
+    .primary-navbar{
+    height:100px;
+    padding:20px 5px 0px 5px;
+  }
+    .secondary-navbar{
+      display:none;
+    }
+    .w-logo-name{display:none;}.logo{margin-left:20px;}
+    .w-search-feild{margin-top:0px;height:55px;}
+    .mgn{
+      margin-top:0px;
+    }
+    .switch{margin-top:8px;}
+  
+  }
+  
